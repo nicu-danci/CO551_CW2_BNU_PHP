@@ -5,13 +5,13 @@ include("_includes/dbconnect.inc");
 include("_includes/functions.inc");
 
 
-// check logged in
+// check logged in.
 if (isset($_SESSION['id'])) {
 
    echo template("templates/partials/header.php");
    echo template("templates/partials/nav.php");
 
-   // check if the form has been submitted
+   // check if the form has been submitted.
    if (isset($_POST['submit'])) {
       // Update data in database
       $sql = "UPDATE student SET firstname=?, lastname=?, dob=?, house=?, town=?, county=?, country=?, postcode=? WHERE studentid=?";
