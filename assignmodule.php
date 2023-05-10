@@ -25,7 +25,7 @@ if (isset($_SESSION['id'])) {
      $result = mysqli_query($conn, $sql);
 
      $data['content'] .= "<form class='mt-5'name='frmassignmodule' action='' method='post' >";
-     $data['content'] .= "<h2 class='fs-3'>Select a module to assign</h2><br/>";
+     $data['content'] .= "<h2 class='fs-3'>Select a module to assign </h2><br/>";
      $data['content'] .= "<select class='form-control ' name='selmodule' >";
      // Display the module name sin a drop down selection box
      while($row = mysqli_fetch_array($result)) {

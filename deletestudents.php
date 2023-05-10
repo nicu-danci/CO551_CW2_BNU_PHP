@@ -25,7 +25,7 @@ mysqli_stmt_close($stmt);
       } else {
          echo template("templates/partials/header.php");
          echo template("templates/partials/nav.php");
-         echo '<h2 class="fs-3 mt-5 mb-5">No students selected.</h2>'; 
+         echo '<h2 class="fs-3 mt-5 mb-5">No students selected</h2>'; 
          echo "<button class='btn btn-primary mt-5' onclick='history.back()'>Back to student list</button>";
       }
 
